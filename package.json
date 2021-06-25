@@ -28,5 +28,8 @@
     "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2",
     "webpack-obj-loader": "^1.0.4"
+  },
+  "dependencies": {
+    "gsap": "^3.2.6"
   }
 }
