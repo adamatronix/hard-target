@@ -30,6 +30,7 @@
     "webpack-obj-loader": "^1.0.4"
   },
   "dependencies": {
+    "file-loader": "^6.2.0",
     "gsap": "^3.2.6"
   }
 }

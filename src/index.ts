@@ -1,3 +1,5 @@
-import { Boilerplate } from './Boilerplate';
+import { Velocity } from './velocity/velocity';
 
-new Boilerplate(10,10);
+export {
+  Velocity
+}
