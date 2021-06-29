@@ -1,9 +1,12 @@
 const path = require('path')
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: { 
+    main: './src/index.ts',
+    example: './src/velocity/example.ts' 
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'lib')
   },
   module: {
