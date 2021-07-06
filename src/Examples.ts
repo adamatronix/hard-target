@@ -2,6 +2,6 @@ import { Velocity } from './velocity/Velocity';
 import { Circle } from './circle/Circle';
 
 new Circle({
-  delay: 0.2,
-  size: 10
+  delay: 0.4,
+  size: 40
 }); 

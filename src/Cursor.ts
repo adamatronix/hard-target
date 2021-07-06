@@ -62,6 +62,8 @@ class Cursor {
    onMouseMove = (e: MouseEvent) => {
     const x = e.clientX - (this.options.size / 2);
     const y = e.clientY - (this.options.size / 2);
+    this.state.rawX = e.clientX;
+    this.state.rawY = e.clientY;
     gsap.to(this.animateData, {duration: this.options.delay, x: x, y: y, ease: "linear.easeIn"});
   }
 
