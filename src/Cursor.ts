@@ -60,7 +60,11 @@ class Cursor {
    * @param {object} e Mouse event 
    */ 
    onMouseMove = (e: MouseEvent) => {
-    gsap.to(this.animateData, {duration: this.options.delay, x: e.clientX - (this.options.size / 2), y: e.clientY - (this.options.size / 2), ease: "linear.easeIn"});
+    const x = e.clientX - (this.options.size / 2);
+    const y = e.clientY - (this.options.size / 2);
+    this.state.rawX = e.clientX;
+    this.state.rawY = e.clientY;
+    gsap.to(this.animateData, {duration: this.options.delay, x: x, y: y, ease: "linear.easeIn"});
   }
 
   /**
